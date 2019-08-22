@@ -42,7 +42,7 @@ addform.addEventListener('submit', e => {
 
 
   search.addEventListener('keyup', ()=>{
-      const term = search.value.trim();
+      const term = search.value.trim().toLowerCase();
       console.log(term);
       filtertodo(term);
   });
